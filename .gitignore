@@ -1,0 +1,6 @@
+.venv
+*.lock
+_build
+_static
+_templates
+__pycache__
