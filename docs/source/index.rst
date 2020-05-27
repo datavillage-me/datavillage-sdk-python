@@ -24,10 +24,6 @@ Install datavillage-sdk by running:
 Code Usage
 ----------
 
-.. automodule:: datavillage_sdk.__init__
-    :members:
-
-
 .. automodule:: datavillage_sdk.auth
     :members:
 

@@ -51,9 +51,9 @@
 <div class="toctree-wrapper compound">
 </div>
 </div>
-<div class="section" id="module-datavillage_sdk.__init__">
-<span id="code-usage"></span><h2>Code Usage<a class="headerlink" href="#module-datavillage_sdk.__init__" title="Permalink to this headline">¶</a></h2>
-<span class="target" id="module-datavillage_sdk.auth"></span><dl class="py class">
+<div class="section" id="module-datavillage_sdk.auth">
+<span id="code-usage"></span><h2>Code Usage<a class="headerlink" href="#module-datavillage_sdk.auth" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
 <dt id="datavillage_sdk.auth.Authentication">
 <em class="property">class </em><code class="sig-prename descclassname">datavillage_sdk.auth.</code><code class="sig-name descname">Authentication</code><a class="headerlink" href="#datavillage_sdk.auth.Authentication" title="Permalink to this definition">¶</a></dt>
 <dd><p>This class provides you all authentication based services.</p>
@@ -297,6 +297,92 @@ which can then be used to call methods in this class</p>
 <dt id="datavillage_sdk.behaviour.Behaviour.get_behaviour">
 <code class="sig-name descname">get_behaviour</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.behaviour.Behaviour.get_behaviour" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method is under construction</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-datavillage_sdk.cages"></span><dl class="py class">
+<dt id="datavillage_sdk.cages.Cages">
+<em class="property">class </em><code class="sig-prename descclassname">datavillage_sdk.cages.</code><code class="sig-name descname">Cages</code><a class="headerlink" href="#datavillage_sdk.cages.Cages" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class provides you all services around cages.
+A secure, privacy enabled container environment to execute your algorithm</p>
+<p>Initiate the class</p>
+<p><code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">datavillage_sdk</span> <span class="pre">import</span> <span class="pre">Cages</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">cage</span> <span class="pre">=</span> <span class="pre">Cages()</span></code></p>
+<p>This provides an <code class="docutils literal notranslate"><span class="pre">cage</span></code> object
+which can then be used to call methods in this class</p>
+<dl class="py method">
+<dt id="datavillage_sdk.cages.Cages.create_cage">
+<code class="sig-name descname">create_cage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.cages.Cages.create_cage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method is under construction.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datavillage_sdk.cages.Cages.deploy_cage">
+<code class="sig-name descname">deploy_cage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.cages.Cages.deploy_cage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method is under construction.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datavillage_sdk.cages.Cages.load_digital_profile">
+<code class="sig-name descname">load_digital_profile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_date</span></em>, <em class="sig-param"><span class="n">end_date</span></em>, <em class="sig-param"><span class="n">consent_receipt</span></em>, <em class="sig-param"><span class="n">user_access_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.cages.Cages.load_digital_profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load a digital profile</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start_date</strong> (<em>date</em>) – start date from to load data of a user in the cage</p></li>
+<li><p><strong>end_date</strong> (<em>date</em>) – end date upto which to load data of a user in the cage</p></li>
+<li><p><strong>consent_receipt</strong> (<em>string</em>) – consent_receipt ID</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[description]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>[type]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datavillage_sdk.cages.Cages.process_digital_profile">
+<code class="sig-name descname">process_digital_profile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">user_token</span></em>, <em class="sig-param"><span class="n">consent_receipt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.cages.Cages.process_digital_profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>process digital profile</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> (<em>string</em>) – send behaviour filters</p></li>
+<li><p><strong>user_token</strong> (<em>string</em>) – user_access_token</p></li>
+<li><p><strong>consent_receipt</strong> (<em>string</em>) – consent_receipt_ID</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[description]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>[type]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datavillage_sdk.cages.Cages.query_digital_profile">
+<code class="sig-name descname">query_digital_profile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">user_access_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.cages.Cages.query_digital_profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> (<em>string</em>) – graphQL query to execute on the schema.</p></li>
+<li><p><strong>user_token</strong> (<em>string</em>) – user_access_token</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[description]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>[type]</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
