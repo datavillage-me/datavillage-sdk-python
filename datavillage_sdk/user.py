@@ -49,7 +49,7 @@ class User:
         :param user: unique user identifier
         :type user: string
         :param app_token: application token
-        :type app_token: string 
+        :type app_token: string
         :return: [description]
         :rtype: [type]
         """

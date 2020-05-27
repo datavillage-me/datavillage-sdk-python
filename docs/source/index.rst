@@ -17,10 +17,6 @@ Install datavillage-sdk by running:
 
     pip install datavillage-sdk
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
 Code Usage
 ----------
 

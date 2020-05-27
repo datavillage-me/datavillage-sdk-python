@@ -34,7 +34,6 @@ class Authentication:
         payload = "client_id=" + clientid + "&client_secret=" + clientsecret
         headers = {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Content-Type": "application/x-www-form-urlencoded",
         }
         response = requests.request("POST", self.url, headers=headers, data=payload)
         return response
