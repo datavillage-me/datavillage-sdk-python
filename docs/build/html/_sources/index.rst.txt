@@ -1,4 +1,4 @@
-Datavillage-sdk
+datavillage-sdk
 ===============
 
 Features
@@ -38,7 +38,7 @@ Contribute
 ----------
 
 - Issue Tracker: https://github.com/datavillage-me/datavillage-sdk-python/issues
-- Source Code: https://github.com/datavillage-me/datavillage-sdk-python/issues
+- Source Code: https://github.com/datavillage-me/datavillage-sdk-python
 
 Support
 -------

@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "datavillage-sdk"
-version = "0.1.0"
-description = ""
+version = "0.0.1"
+description = "This sdk allows you to connect to Datavillage API"
 authors = ["developer@datavillage.me"]
+exclude = ["tests", "docs"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -18,6 +19,9 @@ mkdocs = "^1.1.2"
 nose = "^1.3.7"
 allanc-sphinx = "^0.2"
 sphinx-rtd-theme = "^0.4.3"
+pytest-cov = "^2.9.0"
+pytest-xdist = "^1.32.0"
+coverage = "^5.1"
 
 [build-system]
 requires = ["poetry>=0.12"]

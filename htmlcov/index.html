@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Coverage report</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.index_ready);
+    </script>
+</head>
+<body class="indexfile">
+<div id="header">
+    <div class="content">
+        <h1>Coverage report:
+            <span class="pc_cov">29%</span>
+        </h1>
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+        <form id="filter_container">
+            <input id="filter" type="text" value="" placeholder="filter..." />
+        </form>
+    </div>
+</div>
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">n</span>
+        <span class="key">s</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">c</span> &nbsp; change column sorting
+    </p>
+    </div>
+</div>
+<div id="index">
+    <table class="index">
+        <thead>
+            <tr class="tablehead" title="Click to sort">
+                <th class="name left headerSortDown shortkey_n">Module</th>
+                <th class="shortkey_s">statements</th>
+                <th class="shortkey_m">missing</th>
+                <th class="shortkey_x">excluded</th>
+                <th class="right shortkey_c">coverage</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr class="total">
+                <td class="name left">Total</td>
+                <td>25846</td>
+                <td>18376</td>
+                <td>82</td>
+                <td class="right" data-ratio="7470 25846">29%</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest__argcomplete_py.html">.venv/lib/python3.7/site-packages/_pytest/_argcomplete.py</a></td>
+                <td>37</td>
+                <td>36</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 37">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest__code_code_py.html">.venv/lib/python3.7/site-packages/_pytest/_code/code.py</a></td>
+                <td>655</td>
+                <td>634</td>
+                <td>0</td>
+                <td class="right" data-ratio="21 655">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest__code_source_py.html">.venv/lib/python3.7/site-packages/_pytest/_code/source.py</a></td>
+                <td>244</td>
+                <td>221</td>
+                <td>0</td>
+                <td class="right" data-ratio="23 244">9%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_assertion___init___py.html">.venv/lib/python3.7/site-packages/_pytest/assertion/__init__.py</a></td>
+                <td>79</td>
+                <td>69</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 79">13%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_assertion_rewrite_py.html">.venv/lib/python3.7/site-packages/_pytest/assertion/rewrite.py</a></td>
+                <td>595</td>
+                <td>515</td>
+                <td>0</td>
+                <td class="right" data-ratio="80 595">13%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_cacheprovider_py.html">.venv/lib/python3.7/site-packages/_pytest/cacheprovider.py</a></td>
+                <td>278</td>
+                <td>238</td>
+                <td>0</td>
+                <td class="right" data-ratio="40 278">14%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_capture_py.html">.venv/lib/python3.7/site-packages/_pytest/capture.py</a></td>
+                <td>484</td>
+                <td>412</td>
+                <td>0</td>
+                <td class="right" data-ratio="72 484">15%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_compat_py.html">.venv/lib/python3.7/site-packages/_pytest/compat.py</a></td>
+                <td>180</td>
+                <td>140</td>
+                <td>2</td>
+                <td class="right" data-ratio="40 180">22%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_config___init___py.html">.venv/lib/python3.7/site-packages/_pytest/config/__init__.py</a></td>
+                <td>654</td>
+                <td>552</td>
+                <td>0</td>
+                <td class="right" data-ratio="102 654">16%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_config_argparsing_py.html">.venv/lib/python3.7/site-packages/_pytest/config/argparsing.py</a></td>
+                <td>244</td>
+                <td>199</td>
+                <td>31</td>
+                <td class="right" data-ratio="45 244">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_debugging_py.html">.venv/lib/python3.7/site-packages/_pytest/debugging.py</a></td>
+                <td>194</td>
+                <td>184</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 194">5%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_doctest_py.html">.venv/lib/python3.7/site-packages/_pytest/doctest.py</a></td>
+                <td>332</td>
+                <td>323</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 332">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_faulthandler_py.html">.venv/lib/python3.7/site-packages/_pytest/faulthandler.py</a></td>
+                <td>53</td>
+                <td>39</td>
+                <td>0</td>
+                <td class="right" data-ratio="14 53">26%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_fixtures_py.html">.venv/lib/python3.7/site-packages/_pytest/fixtures.py</a></td>
+                <td>775</td>
+                <td>428</td>
+                <td>0</td>
+                <td class="right" data-ratio="347 775">45%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_helpconfig_py.html">.venv/lib/python3.7/site-packages/_pytest/helpconfig.py</a></td>
+                <td>120</td>
+                <td>111</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 120">8%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_junitxml_py.html">.venv/lib/python3.7/site-packages/_pytest/junitxml.py</a></td>
+                <td>350</td>
+                <td>348</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 350">1%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_logging_py.html">.venv/lib/python3.7/site-packages/_pytest/logging.py</a></td>
+                <td>359</td>
+                <td>246</td>
+                <td>0</td>
+                <td class="right" data-ratio="113 359">31%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_main_py.html">.venv/lib/python3.7/site-packages/_pytest/main.py</a></td>
+                <td>397</td>
+                <td>255</td>
+                <td>0</td>
+                <td class="right" data-ratio="142 397">36%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_mark___init___py.html">.venv/lib/python3.7/site-packages/_pytest/mark/__init__.py</a></td>
+                <td>84</td>
+                <td>70</td>
+                <td>0</td>
+                <td class="right" data-ratio="14 84">17%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_mark_evaluate_py.html">.venv/lib/python3.7/site-packages/_pytest/mark/evaluate.py</a></td>
+                <td>96</td>
+                <td>84</td>
+                <td>0</td>
+                <td class="right" data-ratio="12 96">12%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_mark_structures_py.html">.venv/lib/python3.7/site-packages/_pytest/mark/structures.py</a></td>
+                <td>173</td>
+                <td>139</td>
+                <td>0</td>
+                <td class="right" data-ratio="34 173">20%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_monkeypatch_py.html">.venv/lib/python3.7/site-packages/_pytest/monkeypatch.py</a></td>
+                <td>148</td>
+                <td>136</td>
+                <td>0</td>
+                <td class="right" data-ratio="12 148">8%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_nodes_py.html">.venv/lib/python3.7/site-packages/_pytest/nodes.py</a></td>
+                <td>296</td>
+                <td>188</td>
+                <td>0</td>
+                <td class="right" data-ratio="108 296">36%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_nose_py.html">.venv/lib/python3.7/site-packages/_pytest/nose.py</a></td>
+                <td>20</td>
+                <td>9</td>
+                <td>0</td>
+                <td class="right" data-ratio="11 20">55%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_pastebin_py.html">.venv/lib/python3.7/site-packages/_pytest/pastebin.py</a></td>
+                <td>64</td>
+                <td>63</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 64">2%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_pathlib_py.html">.venv/lib/python3.7/site-packages/_pytest/pathlib.py</a></td>
+                <td>203</td>
+                <td>128</td>
+                <td>0</td>
+                <td class="right" data-ratio="75 203">37%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_python_py.html">.venv/lib/python3.7/site-packages/_pytest/python.py</a></td>
+                <td>776</td>
+                <td>576</td>
+                <td>0</td>
+                <td class="right" data-ratio="200 776">26%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_reports_py.html">.venv/lib/python3.7/site-packages/_pytest/reports.py</a></td>
+                <td>244</td>
+                <td>199</td>
+                <td>0</td>
+                <td class="right" data-ratio="45 244">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_resultlog_py.html">.venv/lib/python3.7/site-packages/_pytest/resultlog.py</a></td>
+                <td>68</td>
+                <td>66</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 68">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_runner_py.html">.venv/lib/python3.7/site-packages/_pytest/runner.py</a></td>
+                <td>269</td>
+                <td>154</td>
+                <td>0</td>
+                <td class="right" data-ratio="115 269">43%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_setuponly_py.html">.venv/lib/python3.7/site-packages/_pytest/setuponly.py</a></td>
+                <td>42</td>
+                <td>36</td>
+                <td>0</td>
+                <td class="right" data-ratio="6 42">14%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_setupplan_py.html">.venv/lib/python3.7/site-packages/_pytest/setupplan.py</a></td>
+                <td>13</td>
+                <td>11</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 13">15%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_skipping_py.html">.venv/lib/python3.7/site-packages/_pytest/skipping.py</a></td>
+                <td>101</td>
+                <td>72</td>
+                <td>0</td>
+                <td class="right" data-ratio="29 101">29%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_stepwise_py.html">.venv/lib/python3.7/site-packages/_pytest/stepwise.py</a></td>
+                <td>58</td>
+                <td>46</td>
+                <td>0</td>
+                <td class="right" data-ratio="12 58">21%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_store_py.html">.venv/lib/python3.7/site-packages/_pytest/store.py</a></td>
+                <td>34</td>
+                <td>28</td>
+                <td>0</td>
+                <td class="right" data-ratio="6 34">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_terminal_py.html">.venv/lib/python3.7/site-packages/_pytest/terminal.py</a></td>
+                <td>804</td>
+                <td>599</td>
+                <td>0</td>
+                <td class="right" data-ratio="205 804">25%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_tmpdir_py.html">.venv/lib/python3.7/site-packages/_pytest/tmpdir.py</a></td>
+                <td>87</td>
+                <td>63</td>
+                <td>0</td>
+                <td class="right" data-ratio="24 87">28%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_unittest_py.html">.venv/lib/python3.7/site-packages/_pytest/unittest.py</a></td>
+                <td>200</td>
+                <td>133</td>
+                <td>0</td>
+                <td class="right" data-ratio="67 200">34%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages__pytest_warnings_py.html">.venv/lib/python3.7/site-packages/_pytest/warnings.py</a></td>
+                <td>77</td>
+                <td>58</td>
+                <td>0</td>
+                <td class="right" data-ratio="19 77">25%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_apipkg___init___py.html">.venv/lib/python3.7/site-packages/apipkg/__init__.py</a></td>
+                <td>151</td>
+                <td>132</td>
+                <td>0</td>
+                <td class="right" data-ratio="19 151">13%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_attr_converters_py.html">.venv/lib/python3.7/site-packages/attr/converters.py</a></td>
+                <td>27</td>
+                <td>25</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 27">7%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_attr_validators_py.html">.venv/lib/python3.7/site-packages/attr/validators.py</a></td>
+                <td>116</td>
+                <td>115</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 116">1%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_certifi___init___py.html">.venv/lib/python3.7/site-packages/certifi/__init__.py</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 2">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_certifi_core_py.html">.venv/lib/python3.7/site-packages/certifi/core.py</a></td>
+                <td>13</td>
+                <td>5</td>
+                <td>0</td>
+                <td class="right" data-ratio="8 13">62%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet___init___py.html">.venv/lib/python3.7/site-packages/chardet/__init__.py</a></td>
+                <td>11</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 11">91%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_big5freq_py.html">.venv/lib/python3.7/site-packages/chardet/big5freq.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_big5prober_py.html">.venv/lib/python3.7/site-packages/chardet/big5prober.py</a></td>
+                <td>14</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="8 14">57%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_chardistribution_py.html">.venv/lib/python3.7/site-packages/chardet/chardistribution.py</a></td>
+                <td>117</td>
+                <td>83</td>
+                <td>0</td>
+                <td class="right" data-ratio="34 117">29%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_charsetgroupprober_py.html">.venv/lib/python3.7/site-packages/chardet/charsetgroupprober.py</a></td>
+                <td>70</td>
+                <td>61</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 70">13%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_charsetprober_py.html">.venv/lib/python3.7/site-packages/chardet/charsetprober.py</a></td>
+                <td>50</td>
+                <td>36</td>
+                <td>0</td>
+                <td class="right" data-ratio="14 50">28%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_codingstatemachine_py.html">.venv/lib/python3.7/site-packages/chardet/codingstatemachine.py</a></td>
+                <td>27</td>
+                <td>18</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 27">33%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_compat_py.html">.venv/lib/python3.7/site-packages/chardet/compat.py</a></td>
+                <td>10</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="6 10">60%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_cp949prober_py.html">.venv/lib/python3.7/site-packages/chardet/cp949prober.py</a></td>
+                <td>14</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="8 14">57%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_enums_py.html">.venv/lib/python3.7/site-packages/chardet/enums.py</a></td>
+                <td>34</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="33 34">97%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_escprober_py.html">.venv/lib/python3.7/site-packages/chardet/escprober.py</a></td>
+                <td>56</td>
+                <td>45</td>
+                <td>0</td>
+                <td class="right" data-ratio="11 56">20%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_escsm_py.html">.venv/lib/python3.7/site-packages/chardet/escsm.py</a></td>
+                <td>17</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="17 17">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_eucjpprober_py.html">.venv/lib/python3.7/site-packages/chardet/eucjpprober.py</a></td>
+                <td>47</td>
+                <td>34</td>
+                <td>0</td>
+                <td class="right" data-ratio="13 47">28%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_euckrfreq_py.html">.venv/lib/python3.7/site-packages/chardet/euckrfreq.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_euckrprober_py.html">.venv/lib/python3.7/site-packages/chardet/euckrprober.py</a></td>
+                <td>14</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="8 14">57%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_euctwfreq_py.html">.venv/lib/python3.7/site-packages/chardet/euctwfreq.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_euctwprober_py.html">.venv/lib/python3.7/site-packages/chardet/euctwprober.py</a></td>
+                <td>14</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="8 14">57%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_gb2312freq_py.html">.venv/lib/python3.7/site-packages/chardet/gb2312freq.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_gb2312prober_py.html">.venv/lib/python3.7/site-packages/chardet/gb2312prober.py</a></td>
+                <td>14</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="8 14">57%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_hebrewprober_py.html">.venv/lib/python3.7/site-packages/chardet/hebrewprober.py</a></td>
+                <td>74</td>
+                <td>48</td>
+                <td>0</td>
+                <td class="right" data-ratio="26 74">35%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_jisfreq_py.html">.venv/lib/python3.7/site-packages/chardet/jisfreq.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_jpcntx_py.html">.venv/lib/python3.7/site-packages/chardet/jpcntx.py</a></td>
+                <td>80</td>
+                <td>61</td>
+                <td>0</td>
+                <td class="right" data-ratio="19 80">24%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_langbulgarianmodel_py.html">.venv/lib/python3.7/site-packages/chardet/langbulgarianmodel.py</a></td>
+                <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 5">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_langcyrillicmodel_py.html">.venv/lib/python3.7/site-packages/chardet/langcyrillicmodel.py</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="13 13">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_langgreekmodel_py.html">.venv/lib/python3.7/site-packages/chardet/langgreekmodel.py</a></td>
+                <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 5">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_langhebrewmodel_py.html">.venv/lib/python3.7/site-packages/chardet/langhebrewmodel.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_langthaimodel_py.html">.venv/lib/python3.7/site-packages/chardet/langthaimodel.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_langturkishmodel_py.html">.venv/lib/python3.7/site-packages/chardet/langturkishmodel.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_latin1prober_py.html">.venv/lib/python3.7/site-packages/chardet/latin1prober.py</a></td>
+                <td>50</td>
+                <td>29</td>
+                <td>0</td>
+                <td class="right" data-ratio="21 50">42%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_mbcharsetprober_py.html">.venv/lib/python3.7/site-packages/chardet/mbcharsetprober.py</a></td>
+                <td>42</td>
+                <td>33</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 42">21%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_mbcsgroupprober_py.html">.venv/lib/python3.7/site-packages/chardet/mbcsgroupprober.py</a></td>
+                <td>14</td>
+                <td>3</td>
+                <td>0</td>
+                <td class="right" data-ratio="11 14">79%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_mbcssm_py.html">.venv/lib/python3.7/site-packages/chardet/mbcssm.py</a></td>
+                <td>41</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="41 41">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_sbcharsetprober_py.html">.venv/lib/python3.7/site-packages/chardet/sbcharsetprober.py</a></td>
+                <td>73</td>
+                <td>60</td>
+                <td>0</td>
+                <td class="right" data-ratio="13 73">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_sbcsgroupprober_py.html">.venv/lib/python3.7/site-packages/chardet/sbcsgroupprober.py</a></td>
+                <td>19</td>
+                <td>8</td>
+                <td>0</td>
+                <td class="right" data-ratio="11 19">58%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_sjisprober_py.html">.venv/lib/python3.7/site-packages/chardet/sjisprober.py</a></td>
+                <td>47</td>
+                <td>34</td>
+                <td>0</td>
+                <td class="right" data-ratio="13 47">28%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_universaldetector_py.html">.venv/lib/python3.7/site-packages/chardet/universaldetector.py</a></td>
+                <td>124</td>
+                <td>61</td>
+                <td>0</td>
+                <td class="right" data-ratio="63 124">51%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_utf8prober_py.html">.venv/lib/python3.7/site-packages/chardet/utf8prober.py</a></td>
+                <td>41</td>
+                <td>29</td>
+                <td>0</td>
+                <td class="right" data-ratio="12 41">29%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_chardet_version_py.html">.venv/lib/python3.7/site-packages/chardet/version.py</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 2">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_coverage_collector_py.html">.venv/lib/python3.7/site-packages/coverage/collector.py</a></td>
+                <td>200</td>
+                <td>194</td>
+                <td>0</td>
+                <td class="right" data-ratio="6 200">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_coverage_control_py.html">.venv/lib/python3.7/site-packages/coverage/control.py</a></td>
+                <td>376</td>
+                <td>371</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 376">1%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_execnet_gateway_py.html">.venv/lib/python3.7/site-packages/execnet/gateway.py</a></td>
+                <td>123</td>
+                <td>49</td>
+                <td>0</td>
+                <td class="right" data-ratio="74 123">60%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_execnet_gateway_base_py.html">.venv/lib/python3.7/site-packages/execnet/gateway_base.py</a></td>
+                <td>995</td>
+                <td>558</td>
+                <td>0</td>
+                <td class="right" data-ratio="437 995">44%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_execnet_gateway_bootstrap_py.html">.venv/lib/python3.7/site-packages/execnet/gateway_bootstrap.py</a></td>
+                <td>48</td>
+                <td>19</td>
+                <td>0</td>
+                <td class="right" data-ratio="29 48">60%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_execnet_gateway_io_py.html">.venv/lib/python3.7/site-packages/execnet/gateway_io.py</a></td>
+                <td>150</td>
+                <td>102</td>
+                <td>0</td>
+                <td class="right" data-ratio="48 150">32%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_execnet_multi_py.html">.venv/lib/python3.7/site-packages/execnet/multi.py</a></td>
+                <td>192</td>
+                <td>102</td>
+                <td>0</td>
+                <td class="right" data-ratio="90 192">47%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_execnet_rsync_py.html">.venv/lib/python3.7/site-packages/execnet/rsync.py</a></td>
+                <td>135</td>
+                <td>112</td>
+                <td>0</td>
+                <td class="right" data-ratio="23 135">17%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_execnet_rsync_remote_py.html">.venv/lib/python3.7/site-packages/execnet/rsync_remote.py</a></td>
+                <td>95</td>
+                <td>92</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 95">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_execnet_xspec_py.html">.venv/lib/python3.7/site-packages/execnet/xspec.py</a></td>
+                <td>34</td>
+                <td>11</td>
+                <td>0</td>
+                <td class="right" data-ratio="23 34">68%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_idna___init___py.html">.venv/lib/python3.7/site-packages/idna/__init__.py</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 2">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_idna_core_py.html">.venv/lib/python3.7/site-packages/idna/core.py</a></td>
+                <td>282</td>
+                <td>244</td>
+                <td>0</td>
+                <td class="right" data-ratio="38 282">13%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_idna_idnadata_py.html">.venv/lib/python3.7/site-packages/idna/idnadata.py</a></td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="4 4">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_idna_intranges_py.html">.venv/lib/python3.7/site-packages/idna/intranges.py</a></td>
+                <td>29</td>
+                <td>24</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 29">17%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_idna_package_data_py.html">.venv/lib/python3.7/site-packages/idna/package_data.py</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 1">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_importlib_metadata___init___py.html">.venv/lib/python3.7/site-packages/importlib_metadata/__init__.py</a></td>
+                <td>220</td>
+                <td>215</td>
+                <td>2</td>
+                <td class="right" data-ratio="5 220">2%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_importlib_metadata__compat_py.html">.venv/lib/python3.7/site-packages/importlib_metadata/_compat.py</a></td>
+                <td>29</td>
+                <td>28</td>
+                <td>47</td>
+                <td class="right" data-ratio="1 29">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_more_itertools_more_py.html">.venv/lib/python3.7/site-packages/more_itertools/more.py</a></td>
+                <td>903</td>
+                <td>894</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 903">1%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_pluggy__tracing_py.html">.venv/lib/python3.7/site-packages/pluggy/_tracing.py</a></td>
+                <td>41</td>
+                <td>31</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 41">24%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_pluggy_callers_py.html">.venv/lib/python3.7/site-packages/pluggy/callers.py</a></td>
+                <td>122</td>
+                <td>86</td>
+                <td>0</td>
+                <td class="right" data-ratio="36 122">30%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_pluggy_hooks_py.html">.venv/lib/python3.7/site-packages/pluggy/hooks.py</a></td>
+                <td>175</td>
+                <td>105</td>
+                <td>0</td>
+                <td class="right" data-ratio="70 175">40%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_pluggy_manager_py.html">.venv/lib/python3.7/site-packages/pluggy/manager.py</a></td>
+                <td>195</td>
+                <td>155</td>
+                <td>0</td>
+                <td class="right" data-ratio="40 195">21%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_py__builtin_py.html">.venv/lib/python3.7/site-packages/py/_builtin.py</a></td>
+                <td>112</td>
+                <td>105</td>
+                <td>0</td>
+                <td class="right" data-ratio="7 112">6%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_py__code___init___py.html">.venv/lib/python3.7/site-packages/py/_code/__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_py__code_code_py.html">.venv/lib/python3.7/site-packages/py/_code/code.py</a></td>
+                <td>524</td>
+                <td>408</td>
+                <td>0</td>
+                <td class="right" data-ratio="116 524">22%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_py__error_py.html">.venv/lib/python3.7/site-packages/py/_error.py</a></td>
+                <td>52</td>
+                <td>49</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 52">6%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_py__io_terminalwriter_py.html">.venv/lib/python3.7/site-packages/py/_io/terminalwriter.py</a></td>
+                <td>266</td>
+                <td>195</td>
+                <td>0</td>
+                <td class="right" data-ratio="71 266">27%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_py__log___init___py.html">.venv/lib/python3.7/site-packages/py/_log/__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_py__log_log_py.html">.venv/lib/python3.7/site-packages/py/_log/log.py</a></td>
+                <td>117</td>
+                <td>49</td>
+                <td>0</td>
+                <td class="right" data-ratio="68 117">58%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_py__path_common_py.html">.venv/lib/python3.7/site-packages/py/_path/common.py</a></td>
+                <td>278</td>
+                <td>188</td>
+                <td>0</td>
+                <td class="right" data-ratio="90 278">32%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_py__path_local_py.html">.venv/lib/python3.7/site-packages/py/_path/local.py</a></td>
+                <td>690</td>
+                <td>545</td>
+                <td>0</td>
+                <td class="right" data-ratio="145 690">21%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_py__vendored_packages_apipkg_py.html">.venv/lib/python3.7/site-packages/py/_vendored_packages/apipkg.py</a></td>
+                <td>148</td>
+                <td>129</td>
+                <td>0</td>
+                <td class="right" data-ratio="19 148">13%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_py__xmlgen_py.html">.venv/lib/python3.7/site-packages/py/_xmlgen.py</a></td>
+                <td>170</td>
+                <td>168</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 170">1%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_pytest_cov_compat_py.html">.venv/lib/python3.7/site-packages/pytest_cov/compat.py</a></td>
+                <td>27</td>
+                <td>22</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 27">19%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_pytest_cov_embed_py.html">.venv/lib/python3.7/site-packages/pytest_cov/embed.py</a></td>
+                <td>77</td>
+                <td>71</td>
+                <td>0</td>
+                <td class="right" data-ratio="6 77">8%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_pytest_cov_engine_py.html">.venv/lib/python3.7/site-packages/pytest_cov/engine.py</a></td>
+                <td>222</td>
+                <td>193</td>
+                <td>0</td>
+                <td class="right" data-ratio="29 222">13%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_pytest_cov_plugin_py.html">.venv/lib/python3.7/site-packages/pytest_cov/plugin.py</a></td>
+                <td>198</td>
+                <td>165</td>
+                <td>0</td>
+                <td class="right" data-ratio="33 198">17%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_pytest_forked___init___py.html">.venv/lib/python3.7/site-packages/pytest_forked/__init__.py</a></td>
+                <td>64</td>
+                <td>62</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 64">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests___init___py.html">.venv/lib/python3.7/site-packages/requests/__init__.py</a></td>
+                <td>55</td>
+                <td>13</td>
+                <td>0</td>
+                <td class="right" data-ratio="42 55">76%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests___version___py.html">.venv/lib/python3.7/site-packages/requests/__version__.py</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 10">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests__internal_utils_py.html">.venv/lib/python3.7/site-packages/requests/_internal_utils.py</a></td>
+                <td>16</td>
+                <td>5</td>
+                <td>0</td>
+                <td class="right" data-ratio="11 16">69%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_adapters_py.html">.venv/lib/python3.7/site-packages/requests/adapters.py</a></td>
+                <td>222</td>
+                <td>103</td>
+                <td>0</td>
+                <td class="right" data-ratio="119 222">54%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_api_py.html">.venv/lib/python3.7/site-packages/requests/api.py</a></td>
+                <td>22</td>
+                <td>10</td>
+                <td>0</td>
+                <td class="right" data-ratio="12 22">55%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_auth_py.html">.venv/lib/python3.7/site-packages/requests/auth.py</a></td>
+                <td>174</td>
+                <td>141</td>
+                <td>0</td>
+                <td class="right" data-ratio="33 174">19%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_certs_py.html">.venv/lib/python3.7/site-packages/requests/certs.py</a></td>
+                <td>4</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 4">75%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_compat_py.html">.venv/lib/python3.7/site-packages/requests/compat.py</a></td>
+                <td>38</td>
+                <td>13</td>
+                <td>0</td>
+                <td class="right" data-ratio="25 38">66%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_cookies_py.html">.venv/lib/python3.7/site-packages/requests/cookies.py</a></td>
+                <td>238</td>
+                <td>150</td>
+                <td>0</td>
+                <td class="right" data-ratio="88 238">37%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_exceptions_py.html">.venv/lib/python3.7/site-packages/requests/exceptions.py</a></td>
+                <td>35</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="29 35">83%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_hooks_py.html">.venv/lib/python3.7/site-packages/requests/hooks.py</a></td>
+                <td>15</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 15">60%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_models_py.html">.venv/lib/python3.7/site-packages/requests/models.py</a></td>
+                <td>446</td>
+                <td>213</td>
+                <td>0</td>
+                <td class="right" data-ratio="233 446">52%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_packages_py.html">.venv/lib/python3.7/site-packages/requests/packages.py</a></td>
+                <td>6</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="6 6">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_sessions_py.html">.venv/lib/python3.7/site-packages/requests/sessions.py</a></td>
+                <td>281</td>
+                <td>135</td>
+                <td>0</td>
+                <td class="right" data-ratio="146 281">52%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_status_codes_py.html">.venv/lib/python3.7/site-packages/requests/status_codes.py</a></td>
+                <td>15</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="15 15">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_structures_py.html">.venv/lib/python3.7/site-packages/requests/structures.py</a></td>
+                <td>40</td>
+                <td>11</td>
+                <td>0</td>
+                <td class="right" data-ratio="29 40">72%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_requests_utils_py.html">.venv/lib/python3.7/site-packages/requests/utils.py</a></td>
+                <td>444</td>
+                <td>295</td>
+                <td>0</td>
+                <td class="right" data-ratio="149 444">34%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_six_py.html">.venv/lib/python3.7/site-packages/six.py</a></td>
+                <td>492</td>
+                <td>252</td>
+                <td>0</td>
+                <td class="right" data-ratio="240 492">49%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3___init___py.html">.venv/lib/python3.7/site-packages/urllib3/__init__.py</a></td>
+                <td>33</td>
+                <td>8</td>
+                <td>0</td>
+                <td class="right" data-ratio="25 33">76%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3__collections_py.html">.venv/lib/python3.7/site-packages/urllib3/_collections.py</a></td>
+                <td>181</td>
+                <td>93</td>
+                <td>0</td>
+                <td class="right" data-ratio="88 181">49%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_connection_py.html">.venv/lib/python3.7/site-packages/urllib3/connection.py</a></td>
+                <td>170</td>
+                <td>60</td>
+                <td>0</td>
+                <td class="right" data-ratio="110 170">65%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_connectionpool_py.html">.venv/lib/python3.7/site-packages/urllib3/connectionpool.py</a></td>
+                <td>311</td>
+                <td>122</td>
+                <td>0</td>
+                <td class="right" data-ratio="189 311">61%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_contrib___init___py.html">.venv/lib/python3.7/site-packages/urllib3/contrib/__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_contrib__appengine_environ_py.html">.venv/lib/python3.7/site-packages/urllib3/contrib/_appengine_environ.py</a></td>
+                <td>11</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 11">91%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_contrib_pyopenssl_py.html">.venv/lib/python3.7/site-packages/urllib3/contrib/pyopenssl.py</a></td>
+                <td>249</td>
+                <td>247</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 249">1%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_contrib_socks_py.html">.venv/lib/python3.7/site-packages/urllib3/contrib/socks.py</a></td>
+                <td>75</td>
+                <td>66</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 75">12%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_exceptions_py.html">.venv/lib/python3.7/site-packages/urllib3/exceptions.py</a></td>
+                <td>100</td>
+                <td>23</td>
+                <td>0</td>
+                <td class="right" data-ratio="77 100">77%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_fields_py.html">.venv/lib/python3.7/site-packages/urllib3/fields.py</a></td>
+                <td>90</td>
+                <td>70</td>
+                <td>0</td>
+                <td class="right" data-ratio="20 90">22%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_filepost_py.html">.venv/lib/python3.7/site-packages/urllib3/filepost.py</a></td>
+                <td>43</td>
+                <td>30</td>
+                <td>0</td>
+                <td class="right" data-ratio="13 43">30%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_packages___init___py.html">.venv/lib/python3.7/site-packages/urllib3/packages/__init__.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_packages_six_py.html">.venv/lib/python3.7/site-packages/urllib3/packages/six.py</a></td>
+                <td>473</td>
+                <td>223</td>
+                <td>0</td>
+                <td class="right" data-ratio="250 473">53%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_packages_ssl_match_hostname___init___py.html">.venv/lib/python3.7/site-packages/urllib3/packages/ssl_match_hostname/__init__.py</a></td>
+                <td>11</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 11">45%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_poolmanager_py.html">.venv/lib/python3.7/site-packages/urllib3/poolmanager.py</a></td>
+                <td>177</td>
+                <td>84</td>
+                <td>0</td>
+                <td class="right" data-ratio="93 177">53%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_request_py.html">.venv/lib/python3.7/site-packages/urllib3/request.py</a></td>
+                <td>39</td>
+                <td>27</td>
+                <td>0</td>
+                <td class="right" data-ratio="12 39">31%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_response_py.html">.venv/lib/python3.7/site-packages/urllib3/response.py</a></td>
+                <td>402</td>
+                <td>234</td>
+                <td>0</td>
+                <td class="right" data-ratio="168 402">42%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_util___init___py.html">.venv/lib/python3.7/site-packages/urllib3/util/__init__.py</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 10">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_util_connection_py.html">.venv/lib/python3.7/site-packages/urllib3/util/connection.py</a></td>
+                <td>66</td>
+                <td>23</td>
+                <td>0</td>
+                <td class="right" data-ratio="43 66">65%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_util_queue_py.html">.venv/lib/python3.7/site-packages/urllib3/util/queue.py</a></td>
+                <td>14</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="13 14">93%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_util_request_py.html">.venv/lib/python3.7/site-packages/urllib3/util/request.py</a></td>
+                <td>50</td>
+                <td>34</td>
+                <td>0</td>
+                <td class="right" data-ratio="16 50">32%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_util_response_py.html">.venv/lib/python3.7/site-packages/urllib3/util/response.py</a></td>
+                <td>35</td>
+                <td>17</td>
+                <td>0</td>
+                <td class="right" data-ratio="18 35">51%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_util_retry_py.html">.venv/lib/python3.7/site-packages/urllib3/util/retry.py</a></td>
+                <td>152</td>
+                <td>97</td>
+                <td>0</td>
+                <td class="right" data-ratio="55 152">36%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_util_ssl__py.html">.venv/lib/python3.7/site-packages/urllib3/util/ssl_.py</a></td>
+                <td>150</td>
+                <td>80</td>
+                <td>0</td>
+                <td class="right" data-ratio="70 150">47%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_util_timeout_py.html">.venv/lib/python3.7/site-packages/urllib3/util/timeout.py</a></td>
+                <td>60</td>
+                <td>25</td>
+                <td>0</td>
+                <td class="right" data-ratio="35 60">58%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_util_url_py.html">.venv/lib/python3.7/site-packages/urllib3/util/url.py</a></td>
+                <td>199</td>
+                <td>82</td>
+                <td>0</td>
+                <td class="right" data-ratio="117 199">59%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_urllib3_util_wait_py.html">.venv/lib/python3.7/site-packages/urllib3/util/wait.py</a></td>
+                <td>77</td>
+                <td>59</td>
+                <td>0</td>
+                <td class="right" data-ratio="18 77">23%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_xdist_dsession_py.html">.venv/lib/python3.7/site-packages/xdist/dsession.py</a></td>
+                <td>239</td>
+                <td>77</td>
+                <td>0</td>
+                <td class="right" data-ratio="162 239">68%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_xdist_looponfail_py.html">.venv/lib/python3.7/site-packages/xdist/looponfail.py</a></td>
+                <td>199</td>
+                <td>198</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 199">1%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_xdist_plugin_py.html">.venv/lib/python3.7/site-packages/xdist/plugin.py</a></td>
+                <td>81</td>
+                <td>57</td>
+                <td>0</td>
+                <td class="right" data-ratio="24 81">30%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_xdist_remote_py.html">.venv/lib/python3.7/site-packages/xdist/remote.py</a></td>
+                <td>156</td>
+                <td>85</td>
+                <td>0</td>
+                <td class="right" data-ratio="71 156">46%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_xdist_report_py.html">.venv/lib/python3.7/site-packages/xdist/report.py</a></td>
+                <td>9</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 9">56%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_xdist_scheduler___init___py.html">.venv/lib/python3.7/site-packages/xdist/scheduler/__init__.py</a></td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="4 4">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_xdist_scheduler_each_py.html">.venv/lib/python3.7/site-packages/xdist/scheduler/each.py</a></td>
+                <td>73</td>
+                <td>60</td>
+                <td>0</td>
+                <td class="right" data-ratio="13 73">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_xdist_scheduler_load_py.html">.venv/lib/python3.7/site-packages/xdist/scheduler/load.py</a></td>
+                <td>115</td>
+                <td>28</td>
+                <td>0</td>
+                <td class="right" data-ratio="87 115">76%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_xdist_scheduler_loadfile_py.html">.venv/lib/python3.7/site-packages/xdist/scheduler/loadfile.py</a></td>
+                <td>10</td>
+                <td>5</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 10">50%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_xdist_scheduler_loadscope_py.html">.venv/lib/python3.7/site-packages/xdist/scheduler/loadscope.py</a></td>
+                <td>138</td>
+                <td>117</td>
+                <td>0</td>
+                <td class="right" data-ratio="21 138">15%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_venv_lib_python3_7_site-packages_xdist_workermanage_py.html">.venv/lib/python3.7/site-packages/xdist/workermanage.py</a></td>
+                <td>296</td>
+                <td>162</td>
+                <td>0</td>
+                <td class="right" data-ratio="134 296">45%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="datavillage_sdk___init___py.html">datavillage_sdk/__init__.py</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 1">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="datavillage_sdk_auth_py.html">datavillage_sdk/auth.py</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 10">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="datavillage_sdk_behaviour_py.html">datavillage_sdk/behaviour.py</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="13 13">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="datavillage_sdk_cages_py.html">datavillage_sdk/cages.py</a></td>
+                <td>25</td>
+                <td>12</td>
+                <td>0</td>
+                <td class="right" data-ratio="13 25">52%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="datavillage_sdk_consent_py.html">datavillage_sdk/consent.py</a></td>
+                <td>32</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="32 32">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="tests___init___py.html">tests/__init__.py</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 2">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="tests_test_datavillage_sdk_py.html">tests/test_datavillage_sdk.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="tests_test_datavillage_sdk_auth_py.html">tests/test_datavillage_sdk_auth.py</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 9">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="tests_test_datavillage_sdk_behaviour_py.html">tests/test_datavillage_sdk_behaviour.py</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 9">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="tests_test_datavillage_sdk_cages_py.html">tests/test_datavillage_sdk_cages.py</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 9">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="tests_test_datavillage_sdk_consent_py.html">tests/test_datavillage_sdk_consent.py</a></td>
+                <td>24</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="24 24">100%</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="no_rows">
+        No items found using the specified filter.
+    </p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.1</a>,
+            created at 2020-05-30 22:40
+        </p>
+    </div>
+</div>
+</body>
+</html>
