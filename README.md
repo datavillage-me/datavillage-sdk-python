@@ -1,6 +1,7 @@
 # Datavillage Python SDK
 
 ![Pipeline](https://github.com/datavillage-me/datavillage-sdk-python/workflows/CI/badge.svg)
+![Docs](https://readthedocs.org/projects/datavillage-sdk/badge/?version=latest&style=plastic)
 
 This repository is the sdk implementation of the REST endpoints at
 [REST API POSTMAN](https://documenter.getpostman.com/view/7257320/SzYT52Me?version=latest#ce2b3778-8c64-4b4c-a540-e28514ce7831) in python
