@@ -5,3 +5,4 @@ _static
 _templates
 __pycache__
 .coverage
+.pytest_cache
