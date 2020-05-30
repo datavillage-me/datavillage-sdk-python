@@ -1,16 +1,14 @@
-from datavillage_sdk import auth
+from datavillage_sdk.auth import Authentication
 import unittest
-import requests
+from unittest.mock import patch
 
 
 class TestFunctions(unittest.TestCase):
     """Test case for the client methods."""
 
-    def test_request_response(self):
-        url = "https://api.datavillage.me/oauth/token"
-        payload = {}
-        headers = {
-            "Content-Type": "application/x-www-form-urlencoded",
-        }
-        response = requests.request("POST", url, headers=headers, data=payload)
-        assert response.status_code == 200
+    @patch("datavillage_sdk.auth.requests.post")
+    def test_request_response(self, mock_post):
+        mock_post.return_value.ok = True
+        auth = Authentication()
+        response = auth.get_application_token("test", "test")
+        assert response is not None

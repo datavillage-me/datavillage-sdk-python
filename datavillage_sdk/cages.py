@@ -21,18 +21,6 @@ class Cages:
     def __init__(self):
         super().__init__()
 
-    def create_cage(self):
-        """
-        Method is under construction.
-
-        """
-
-    def deploy_cage(self):
-        """
-        Method is under construction.
-
-        """
-
     def load_digital_profile(
         self, start_date, end_date, consent_receipt, user_access_token
     ):

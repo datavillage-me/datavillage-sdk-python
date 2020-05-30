@@ -15,7 +15,7 @@ Installation
 
 Install datavillage-sdk by running:
 
-    pip install datavillage-sdk
+    ``pip install datavillage-sdk``
 
 Code Usage
 ----------
@@ -26,11 +26,6 @@ Code Usage
 
 .. automodule:: datavillage_sdk.consent
     :members:
-
-
-.. automodule:: datavillage_sdk.user
-    :members:
-
 
 .. automodule:: datavillage_sdk.behaviour
     :members:

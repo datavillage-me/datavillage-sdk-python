@@ -12,9 +12,9 @@ class Consent:
 
     ``from datavillage_sdk import Consent``
 
-    ``cage = Consent()``
+    ``consent = Consent()``
 
-    This provides an ``cage`` object
+    This provides an ``consent`` object
     which can then be used to call methods in this class
     """
 
@@ -33,7 +33,7 @@ class Consent:
         creator_name,
         creator_uri,
         creator_logo,
-        behavior_extracted_frequency,
+        behaviour_extracted_frequency,
     ):
         """Use this method to create consent receipt.
 
@@ -75,7 +75,7 @@ class Consent:
             "creator-name": creator_name,
             "creator-uri": creator_uri,
             "creator-logo": creator_logo,
-            "behavior-extracted-frequency": behavior_extracted_frequency,
+            "behavior-extracted-frequency": behaviour_extracted_frequency,
         }
         headers = {
             "Content-Type": "application/json",
@@ -112,6 +112,7 @@ class Consent:
 
     def list_consent_receipts(self, app_token):
         """Get list of consent receipts created for your App
+        
         :param app_token: application token
         :type app_token: string
 
@@ -127,27 +128,6 @@ class Consent:
             "Authorization": token,
         }
         response = requests.request("GET", url, headers=headers, data=payload)
-        return response.text.encode("utf8")
-
-    def create_consent(self, consent_receipt_processing, user_access_token):
-        """Create Consent based on the consent receipt
-
-        :param consent_receipt_processing: consent ID
-        :type consent_receipt_processing: string
-        :param user_access_token: user access token
-        :type user_access_token: string
-        :return: [description]
-        :rtype: [type]
-        """
-        token = "Bearer" + user_access_token
-        url = "https://api.datavillage.me/consents/"
-        +consent_receipt_processing
-        payload = {}
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": token,
-        }
-        response = requests.request("POST", url, headers=headers, data=payload)
         return response.text.encode("utf8")
 
     def get_consent(self, consent_receipt_processing, user_access_token):
