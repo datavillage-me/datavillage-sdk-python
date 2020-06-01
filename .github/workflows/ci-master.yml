@@ -52,11 +52,11 @@ jobs:
     - name: Test with pytest
       run: poetry run pytest --cov . -n 2 --cov-report=html
     
-    # Code climate integration pending, following authorization
-    #- name: Test & publish code coverage
-    #  uses: paambaati/codeclimate-action@v2.6.0
-    #  env
-    #    CC_TEST_REPORTER_ID: <code_climate_reporter_id>
-    #  with:
-    #    coverageCommand: coverage run -m pytest
-    #    debug: true
+    # Code climate integration
+    - name: Test & publish code coverage
+      uses: paambaati/codeclimate-action@v2.6.0
+      env:
+        CC_TEST_REPORTER_ID: ${{secrets.CODE_CLIMATE_REPORTER_ID}}
+      with:
+        coverageCommand: coverage run -m pytest
+        debug: true
