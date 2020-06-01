@@ -48,13 +48,29 @@ jobs:
 
     - name: Code Quality
       run: poetry run black . --check
-
-    - name: Test with pytest
-      run: poetry run pytest -n 2 
+    
+    - name: Test & publish code coverage
+      uses: paambaati/codeclimate-action@v2.6.0
+      env:
+        CC_TEST_REPORTER_ID: ${{secrets.CODE_CLIMATE_REPORTER_ID}}
+      with:
+        coverageCommand: .venv/bin/coverage run -m pytest
+        debug: true
     
     - name: Code Climate Test Reporter
       uses: aktions/codeclimate-test-reporter@v1.1.0
       with:
         codeclimate-test-reporter-id: ${{secrets.CODE_CLIMATE_REPORTER_ID}}
-        command: .venv/bin/coverage report -m
+        command: before-build
+    
+    - name: Test with pytest
+      run: poetry run pytest -n 2 --cov . -n 2 --cov-report=html
+    
+    - name: Code Climate Test Reporter
+      uses: aktions/codeclimate-test-reporter@v1.1.0
+      with:
+        codeclimate-test-reporter-id: ${{secrets.CODE_CLIMATE_REPORTER_ID}}
+        command: after-build .venv/bin/coverage xml
+    
+    
 
