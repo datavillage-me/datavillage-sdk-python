@@ -50,10 +50,11 @@ jobs:
       run: poetry run black . --check
 
     - name: Test with pytest
-      run: poetry run pytest --cov . -n 2 --cov-report=html
+      run: poetry run pytest -n 2 
     
     - name: Code Climate Test Reporter
       uses: aktions/codeclimate-test-reporter@v1.1.0
       with:
         codeclimate-test-reporter-id: ${{secrets.CODE_CLIMATE_REPORTER_ID}}
+        command: .venv/bin/coverage report -m
 
