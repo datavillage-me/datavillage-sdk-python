@@ -58,5 +58,5 @@ jobs:
       env:
         CC_TEST_REPORTER_ID: ${{secrets.CODE_CLIMATE_REPORTER_ID}}
       with:
-        coverageCommand: coverage run -m pytest
+        coverageCommand: $GITHUB_WORKSPACE/.venv/bin/coverage run -m pytest
         debug: true
