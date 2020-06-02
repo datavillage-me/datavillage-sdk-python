@@ -67,7 +67,8 @@ class Consent:
 
         token = "Bearer" + app_token
         url = "https://api.datavillage.me/consentReceipts"
-        sources = Sources().get_data_sources()
+        sources = Sources().get_data_sources(app_token)
+        source_id = []
         if data_sources in sources:
             source_id = sources["ID"]
         payload = {
