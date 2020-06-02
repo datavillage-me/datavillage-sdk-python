@@ -61,7 +61,6 @@ jobs:
       uses: aktions/codeclimate-test-reporter@v1.1.0
       with:
         codeclimate-test-reporter-id: ${{secrets.CODE_CLIMATE_REPORTER_ID}}
-        command: after-build .venv/bin/coverage report -m
     
     
 
