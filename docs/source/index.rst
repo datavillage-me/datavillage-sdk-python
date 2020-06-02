@@ -20,17 +20,17 @@ Install datavillage-sdk by running:
 Code Usage
 ----------
 
-.. automodule:: datavillage_sdk.auth
+.. automodule:: datavillage_sdk.management.auth
     :members:
 
 
-.. automodule:: datavillage_sdk.consent
+.. automodule:: datavillage_sdk.management.consent
     :members:
 
-.. automodule:: datavillage_sdk.behaviour
+.. automodule:: datavillage_sdk.user.behaviour
     :members:
 
-.. automodule:: datavillage_sdk.cages
+.. automodule:: datavillage_sdk.user.cages
     :members:
 
 

@@ -83,7 +83,7 @@
 <li><a class="reference internal" href="#">datavillage-sdk</a><ul>
 <li><a class="reference internal" href="#features">Features</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#module-datavillage_sdk.auth">Code Usage</a></li>
+<li><a class="reference internal" href="#module-datavillage_sdk.management.auth">Code Usage</a></li>
 <li><a class="reference internal" href="#contribute">Contribute</a></li>
 <li><a class="reference internal" href="#support">Support</a></li>
 <li><a class="reference internal" href="#license">License</a></li>
@@ -172,11 +172,11 @@
 <div><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">datavillage-sdk</span></code></p>
 </div></blockquote>
 </div>
-<div class="section" id="module-datavillage_sdk.auth">
-<span id="code-usage"></span><h2>Code Usage<a class="headerlink" href="#module-datavillage_sdk.auth" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-datavillage_sdk.management.auth">
+<span id="code-usage"></span><h2>Code Usage<a class="headerlink" href="#module-datavillage_sdk.management.auth" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="datavillage_sdk.auth.Authentication">
-<em class="property">class </em><code class="sig-prename descclassname">datavillage_sdk.auth.</code><code class="sig-name descname">Authentication</code><a class="headerlink" href="#datavillage_sdk.auth.Authentication" title="Permalink to this definition">¶</a></dt>
+<dt id="datavillage_sdk.management.auth.Authentication">
+<em class="property">class </em><code class="sig-prename descclassname">datavillage_sdk.management.auth.</code><code class="sig-name descname">Authentication</code><a class="headerlink" href="#datavillage_sdk.management.auth.Authentication" title="Permalink to this definition">¶</a></dt>
 <dd><p>This class provides you all authentication based services.</p>
 <p>Initiate the class</p>
 <p><code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">datavillage_sdk</span> <span class="pre">import</span> <span class="pre">Authentication</span></code></p>
@@ -184,8 +184,8 @@
 <p>This provides an <code class="docutils literal notranslate"><span class="pre">auth</span></code> object
 which can then be used to call methods in this class</p>
 <dl class="py method">
-<dt id="datavillage_sdk.auth.Authentication.get_application_token">
-<code class="sig-name descname">get_application_token</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">clientid</span></em>, <em class="sig-param"><span class="n">clientsecret</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.auth.Authentication.get_application_token" title="Permalink to this definition">¶</a></dt>
+<dt id="datavillage_sdk.management.auth.Authentication.get_application_token">
+<code class="sig-name descname">get_application_token</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">clientid</span></em>, <em class="sig-param"><span class="n">clientsecret</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.management.auth.Authentication.get_application_token" title="Permalink to this definition">¶</a></dt>
 <dd><p>Use your client id and client secret,
 generated at <a class="reference external" href="https://developer.datavillage.me">https://developer.datavillage.me</a></p>
 <dl class="field-list simple">
@@ -206,9 +206,9 @@ generated at <a class="reference external" href="https://developer.datavillage.m
 
 </dd></dl>
 
-<span class="target" id="module-datavillage_sdk.consent"></span><dl class="py class">
-<dt id="datavillage_sdk.consent.Consent">
-<em class="property">class </em><code class="sig-prename descclassname">datavillage_sdk.consent.</code><code class="sig-name descname">Consent</code><a class="headerlink" href="#datavillage_sdk.consent.Consent" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="module-datavillage_sdk.management.consent"></span><dl class="py class">
+<dt id="datavillage_sdk.management.consent.Consent">
+<em class="property">class </em><code class="sig-prename descclassname">datavillage_sdk.management.consent.</code><code class="sig-name descname">Consent</code><a class="headerlink" href="#datavillage_sdk.management.consent.Consent" title="Permalink to this definition">¶</a></dt>
 <dd><p>This class provides the services around consent.
 - Create a new consent consent receipt
 - Manage privacy center
@@ -219,8 +219,8 @@ generated at <a class="reference external" href="https://developer.datavillage.m
 <p>This provides an <code class="docutils literal notranslate"><span class="pre">consent</span></code> object
 which can then be used to call methods in this class</p>
 <dl class="py method">
-<dt id="datavillage_sdk.consent.Consent.create_consent_receipt">
-<code class="sig-name descname">create_consent_receipt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_token</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">description</span></em>, <em class="sig-param"><span class="n">purpose</span></em>, <em class="sig-param"><span class="n">duration</span></em>, <em class="sig-param"><span class="n">data_categories</span></em>, <em class="sig-param"><span class="n">data_sources</span></em>, <em class="sig-param"><span class="n">creator_name</span></em>, <em class="sig-param"><span class="n">creator_uri</span></em>, <em class="sig-param"><span class="n">creator_logo</span></em>, <em class="sig-param"><span class="n">behaviour_extracted_frequency</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.consent.Consent.create_consent_receipt" title="Permalink to this definition">¶</a></dt>
+<dt id="datavillage_sdk.management.consent.Consent.create_consent_receipt">
+<code class="sig-name descname">create_consent_receipt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_token</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">description</span></em>, <em class="sig-param"><span class="n">purpose</span></em>, <em class="sig-param"><span class="n">duration</span></em>, <em class="sig-param"><span class="n">data_categories</span></em>, <em class="sig-param"><span class="n">data_sources</span></em>, <em class="sig-param"><span class="n">creator_name</span></em>, <em class="sig-param"><span class="n">creator_uri</span></em>, <em class="sig-param"><span class="n">creator_logo</span></em>, <em class="sig-param"><span class="n">behaviour_extracted_frequency</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.management.consent.Consent.create_consent_receipt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Use this method to create consent receipt.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -248,8 +248,8 @@ which can then be used to call methods in this class</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="datavillage_sdk.consent.Consent.get_consent">
-<code class="sig-name descname">get_consent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">consent_receipt_processing</span></em>, <em class="sig-param"><span class="n">user_access_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.consent.Consent.get_consent" title="Permalink to this definition">¶</a></dt>
+<dt id="datavillage_sdk.management.consent.Consent.get_consent">
+<code class="sig-name descname">get_consent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">consent_receipt_processing</span></em>, <em class="sig-param"><span class="n">user_access_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.management.consent.Consent.get_consent" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create Consent based on the consent receipt</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -268,8 +268,8 @@ which can then be used to call methods in this class</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="datavillage_sdk.consent.Consent.get_consent_receipt">
-<code class="sig-name descname">get_consent_receipt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">consent_receipt_processing</span></em>, <em class="sig-param"><span class="n">app_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.consent.Consent.get_consent_receipt" title="Permalink to this definition">¶</a></dt>
+<dt id="datavillage_sdk.management.consent.Consent.get_consent_receipt">
+<code class="sig-name descname">get_consent_receipt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">consent_receipt_processing</span></em>, <em class="sig-param"><span class="n">app_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.management.consent.Consent.get_consent_receipt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Use this to get consent receipt</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -289,8 +289,8 @@ which can then be used to call methods in this class</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="datavillage_sdk.consent.Consent.list_consent_receipts">
-<code class="sig-name descname">list_consent_receipts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.consent.Consent.list_consent_receipts" title="Permalink to this definition">¶</a></dt>
+<dt id="datavillage_sdk.management.consent.Consent.list_consent_receipts">
+<code class="sig-name descname">list_consent_receipts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.management.consent.Consent.list_consent_receipts" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get list of consent receipts created for your App</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -307,15 +307,15 @@ which can then be used to call methods in this class</p>
 
 </dd></dl>
 
-<span class="target" id="module-datavillage_sdk.behaviour"></span><dl class="py class">
-<dt id="datavillage_sdk.behaviour.Behaviour">
-<em class="property">class </em><code class="sig-prename descclassname">datavillage_sdk.behaviour.</code><code class="sig-name descname">Behaviour</code><a class="headerlink" href="#datavillage_sdk.behaviour.Behaviour" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="module-datavillage_sdk.user.behaviour"></span><dl class="py class">
+<dt id="datavillage_sdk.user.behaviour.Behaviour">
+<em class="property">class </em><code class="sig-prename descclassname">datavillage_sdk.user.behaviour.</code><code class="sig-name descname">Behaviour</code><a class="headerlink" href="#datavillage_sdk.user.behaviour.Behaviour" title="Permalink to this definition">¶</a></dt>
 <dd><p>This class offers methods to manage a behaviours</p>
 <p><code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">datavillage_sdk</span> <span class="pre">import</span> <span class="pre">Behaviour</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">behaviour</span> <span class="pre">=</span> <span class="pre">Behaviour()</span></code></p>
 <dl class="py method">
-<dt id="datavillage_sdk.behaviour.Behaviour.create_behaviour">
-<code class="sig-name descname">create_behaviour</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em>, <em class="sig-param"><span class="n">consent_receipt_processing</span></em>, <em class="sig-param"><span class="n">behaviour</span></em>, <em class="sig-param"><span class="n">user_access_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.behaviour.Behaviour.create_behaviour" title="Permalink to this definition">¶</a></dt>
+<dt id="datavillage_sdk.user.behaviour.Behaviour.create_behaviour">
+<code class="sig-name descname">create_behaviour</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em>, <em class="sig-param"><span class="n">consent_receipt_processing</span></em>, <em class="sig-param"><span class="n">behaviour</span></em>, <em class="sig-param"><span class="n">user_access_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.user.behaviour.Behaviour.create_behaviour" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a new behaviour</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -336,22 +336,22 @@ which can then be used to call methods in this class</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="datavillage_sdk.behaviour.Behaviour.get_all_behaviour">
-<code class="sig-name descname">get_all_behaviour</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em>, <em class="sig-param"><span class="n">app_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.behaviour.Behaviour.get_all_behaviour" title="Permalink to this definition">¶</a></dt>
+<dt id="datavillage_sdk.user.behaviour.Behaviour.get_all_behaviour">
+<code class="sig-name descname">get_all_behaviour</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em>, <em class="sig-param"><span class="n">app_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.user.behaviour.Behaviour.get_all_behaviour" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method is under construction</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="datavillage_sdk.behaviour.Behaviour.get_behaviour">
-<code class="sig-name descname">get_behaviour</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.behaviour.Behaviour.get_behaviour" title="Permalink to this definition">¶</a></dt>
+<dt id="datavillage_sdk.user.behaviour.Behaviour.get_behaviour">
+<code class="sig-name descname">get_behaviour</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.user.behaviour.Behaviour.get_behaviour" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method is under construction</p>
 </dd></dl>
 
 </dd></dl>
 
-<span class="target" id="module-datavillage_sdk.cages"></span><dl class="py class">
-<dt id="datavillage_sdk.cages.Cages">
-<em class="property">class </em><code class="sig-prename descclassname">datavillage_sdk.cages.</code><code class="sig-name descname">Cages</code><a class="headerlink" href="#datavillage_sdk.cages.Cages" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="module-datavillage_sdk.user.cages"></span><dl class="py class">
+<dt id="datavillage_sdk.user.cages.Cages">
+<em class="property">class </em><code class="sig-prename descclassname">datavillage_sdk.user.cages.</code><code class="sig-name descname">Cages</code><a class="headerlink" href="#datavillage_sdk.user.cages.Cages" title="Permalink to this definition">¶</a></dt>
 <dd><p>This class provides you all services around cages.
 A secure, privacy enabled container environment to execute your algorithm</p>
 <p>Initiate the class</p>
@@ -360,8 +360,8 @@ A secure, privacy enabled container environment to execute your algorithm</p>
 <p>This provides an <code class="docutils literal notranslate"><span class="pre">cage</span></code> object
 which can then be used to call methods in this class</p>
 <dl class="py method">
-<dt id="datavillage_sdk.cages.Cages.load_digital_profile">
-<code class="sig-name descname">load_digital_profile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_date</span></em>, <em class="sig-param"><span class="n">end_date</span></em>, <em class="sig-param"><span class="n">consent_receipt</span></em>, <em class="sig-param"><span class="n">user_access_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.cages.Cages.load_digital_profile" title="Permalink to this definition">¶</a></dt>
+<dt id="datavillage_sdk.user.cages.Cages.load_digital_profile">
+<code class="sig-name descname">load_digital_profile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_date</span></em>, <em class="sig-param"><span class="n">end_date</span></em>, <em class="sig-param"><span class="n">consent_receipt</span></em>, <em class="sig-param"><span class="n">user_access_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.user.cages.Cages.load_digital_profile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load a digital profile</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -381,8 +381,8 @@ which can then be used to call methods in this class</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="datavillage_sdk.cages.Cages.process_digital_profile">
-<code class="sig-name descname">process_digital_profile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">user_token</span></em>, <em class="sig-param"><span class="n">consent_receipt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.cages.Cages.process_digital_profile" title="Permalink to this definition">¶</a></dt>
+<dt id="datavillage_sdk.user.cages.Cages.process_digital_profile">
+<code class="sig-name descname">process_digital_profile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">user_token</span></em>, <em class="sig-param"><span class="n">consent_receipt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.user.cages.Cages.process_digital_profile" title="Permalink to this definition">¶</a></dt>
 <dd><p>process digital profile</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -402,8 +402,8 @@ which can then be used to call methods in this class</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="datavillage_sdk.cages.Cages.query_digital_profile">
-<code class="sig-name descname">query_digital_profile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">user_access_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.cages.Cages.query_digital_profile" title="Permalink to this definition">¶</a></dt>
+<dt id="datavillage_sdk.user.cages.Cages.query_digital_profile">
+<code class="sig-name descname">query_digital_profile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">user_access_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#datavillage_sdk.user.cages.Cages.query_digital_profile" title="Permalink to this definition">¶</a></dt>
 <dd><p>[summary]</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

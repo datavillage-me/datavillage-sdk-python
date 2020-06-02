@@ -9,7 +9,7 @@ class Cages:
 
     Initiate the class
 
-    ``from datavillage_sdk import Cages``
+    ``from datavillage_sdk.user.cages import Cages``
 
     ``cage = Cages()``
 

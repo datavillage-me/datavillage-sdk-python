@@ -1,4 +1,4 @@
-from datavillage_sdk.behaviour import Behaviour
+from datavillage_sdk.user.behaviour import Behaviour
 import unittest
 from unittest.mock import patch
 
@@ -6,7 +6,7 @@ from unittest.mock import patch
 class TestFunctions(unittest.TestCase):
     """Test case for the client methods."""
 
-    @patch("datavillage_sdk.behaviour.requests.post")
+    @patch("datavillage_sdk.user.behaviour.requests.post")
     def test_create_behaviour(self, mock_post):
         mock_post.return_value.ok = True
         behaviour = Behaviour()

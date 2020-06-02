@@ -5,7 +5,7 @@ class Behaviour:
     """
     This class offers methods to manage a behaviours
 
-    ``from datavillage_sdk import Behaviour``
+    ``from datavillage_sdk.user.behaviour import Behaviour``
 
     ``behaviour = Behaviour()``
 
@@ -21,7 +21,7 @@ class Behaviour:
 
         :param user: unique user identifier
         :type user: string
-        :param consent_receipt_processing: consent receipt ID 
+        :param consent_receipt_processing: consent receipt ID
         :type consent_receipt_processing: string
         :param behaviour: base64 encoded JSON-LD
         :type behaviour: base64

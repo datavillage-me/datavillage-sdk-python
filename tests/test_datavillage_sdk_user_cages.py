@@ -1,4 +1,4 @@
-from datavillage_sdk.cages import Cages
+from datavillage_sdk.user.cages import Cages
 import unittest
 from unittest.mock import patch
 
@@ -6,7 +6,7 @@ from unittest.mock import patch
 class TestFunctions(unittest.TestCase):
     """Test case for the client methods."""
 
-    @patch("datavillage_sdk.consent.requests.post")
+    @patch("datavillage_sdk.user.cages.requests.post")
     def test_query_digital_profile(self, mock_post):
         mock_post.return_value.ok = True
         cage = Cages()

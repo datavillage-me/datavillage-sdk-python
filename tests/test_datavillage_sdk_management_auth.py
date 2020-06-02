@@ -1,4 +1,4 @@
-from datavillage_sdk.auth import Authentication
+from datavillage_sdk.management.auth import Authentication
 import unittest
 from unittest.mock import patch
 
@@ -6,7 +6,7 @@ from unittest.mock import patch
 class TestFunctions(unittest.TestCase):
     """Test case for the client methods."""
 
-    @patch("datavillage_sdk.auth.requests.post")
+    @patch("datavillage_sdk.management.auth.requests.post")
     def test_request_response(self, mock_post):
         mock_post.return_value.ok = True
         auth = Authentication()

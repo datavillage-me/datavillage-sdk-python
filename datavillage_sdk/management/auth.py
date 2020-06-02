@@ -7,7 +7,7 @@ class Authentication:
 
     Initiate the class
 
-    ``from datavillage_sdk import Authentication``
+    ``from datavillage_sdk.management.auth import Authentication``
 
     ``auth = Authentication()``
 
