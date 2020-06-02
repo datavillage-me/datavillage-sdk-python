@@ -54,23 +54,14 @@ jobs:
       env:
         CC_TEST_REPORTER_ID: ${{secrets.CODE_CLIMATE_REPORTER_ID}}
       with:
-        coverageCommand: .venv/bin/coverage run -m pytest
+        coverageCommand: .venv/bin/coverage run -m pytest -n 2 --cov . -n 2 
         debug: true
-    
+     
     - name: Code Climate Test Reporter
       uses: aktions/codeclimate-test-reporter@v1.1.0
       with:
         codeclimate-test-reporter-id: ${{secrets.CODE_CLIMATE_REPORTER_ID}}
-        command: before-build
-    
-    - name: Test with pytest
-      run: poetry run pytest -n 2 --cov . -n 2 --cov-report=html
-    
-    - name: Code Climate Test Reporter
-      uses: aktions/codeclimate-test-reporter@v1.1.0
-      with:
-        codeclimate-test-reporter-id: ${{secrets.CODE_CLIMATE_REPORTER_ID}}
-        command: after-build .venv/bin/coverage xml
+        command: after-build .venv/bin/coverage report -m
     
     
 
