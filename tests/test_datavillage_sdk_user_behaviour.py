@@ -33,7 +33,7 @@ class TestFunctions(unittest.TestCase):
     def test_get_all_behaviour(self, mock_post):
         mock_post.return_value.ok = True
         behaviour = Behaviour()
-        response = behaviour.get_behaviour(
+        response = behaviour.get_all_behaviour(
             user_id="uesr", consent_receipt_processing="consent_receipt_processing"
         )
         assert response is not None

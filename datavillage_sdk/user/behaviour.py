@@ -42,7 +42,7 @@ class Behaviour:
         response = requests.request("POST", url, headers=headers, data=payload)
         return response
 
-    def get_behaviour(self, user_id, consent_receipt, behavior_id):
+    def get_behaviour(self, user_id, consent_receipt, behaviour_id):
         """Get Behaviour
 
         :param user_id: unique user identifier
