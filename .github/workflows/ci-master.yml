@@ -54,6 +54,10 @@ jobs:
       with:
         command: poetry run pytest -n 2 --cov . --cov-report=xml
         reporter-id: ${{secrets.CODE_CLIMATE_REPORTER_ID}}
+    - name: Build and publish to pypi
+      uses: JRubics/poetry-publish@v1
+      with:
+        pypi_token: ${{ secrets.PYPI_SECRET }}
     
     
 
