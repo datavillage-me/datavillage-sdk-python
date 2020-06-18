@@ -37,12 +37,11 @@ class Consent:
         behaviour_extracted_frequency,
     ):
         """Use this method to create consent receipt.
-        NOTE: To be refactored
-
+        
         :param app_token: application access token
         :type app_token: string
-        :param name: name of the consent receipt
-        :type name: string
+        :param name: name Name of the consent receipt
+        :type name: string 
         :param description: description
         :type description: string
         :param purpose: purpose of the consent
@@ -146,7 +145,7 @@ class Consent:
         :return: [description]
         :rtype: [type]
         """
-        token = "Bearer" + user_access_token
+        user_token = "Bearer" + user_access_token
         url = (
             "https://api.datavillage.me/consents/"
             + consent_receipt_processing
@@ -155,7 +154,7 @@ class Consent:
         payload = {}
         headers = {
             "Content-Type": "application/json",
-            "Authorization": token,
+            "Authorization": user_token,
         }
         response = requests.request("POST", url, headers=headers, data=payload)
         return response

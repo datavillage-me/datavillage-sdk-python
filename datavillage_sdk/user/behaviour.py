@@ -42,12 +42,38 @@ class Behaviour:
         response = requests.request("POST", url, headers=headers, data=payload)
         return response
 
-    def get_behaviour(self):
-        """
-        This method is under construction
-        """
+    def get_behaviour(self, user_id, consent_receipt, behavior_id):
+        """Get Behaviour
 
-    def get_all_behaviour(self, user, app_token):
+        :param user_id: unique user identifier
+        :type user_id: string
+        :param consent_receipt: consent receipt ID
+        :type consent_receipt: string
+        :param behaviour_id: behavior_id
+        :type behaviour_id: string
+        :return: behaviour instance
+        :rtype: object
         """
-        This method is under construction
+        url = "https://api.datavillage.me/behaviors/{{user_id}}/{{consent_receipt}}/{{behavior_id}}"
+        payload = {}
+        headers = {"Content-Type": "application/json"}
+
+        response = requests.request("GET", url, headers=headers, data=payload)
+        return response
+
+    def get_all_behaviour(self, user_id, consent_receipt_processing):
+        """Get Behaviour
+
+        :param user_id: unique user identifier
+        :type user_id: string
+        :param consent_receipt_processing: consent receipt
+        :type consent_receipt: string
+        :return: behaviour instance
+        :rtype: object
         """
+        url = "https://api.datavillage.me/behaviors/{{user_id}}/{{consent_receipt_processing}}"
+        payload = {}
+        headers = {"Content-Type": "application/json"}
+
+        response = requests.request("GET", url, headers=headers, data=payload)
+        return response

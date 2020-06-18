@@ -68,25 +68,3 @@ class Cages:
         }
         response = requests.request("POST", url, headers=headers, data=payload)
         return response
-
-    def process_digital_profile(self, query, user_token, consent_receipt):
-        """process digital profile
-
-        :param query: send behaviour filters
-        :type query: string
-        :param user_token: user_access_token
-        :type user_token: string
-        :param consent_receipt: consent_receipt_ID
-        :type consent_receipt: string
-        :return: [description]
-        :rtype: [type]
-        """
-        token = "Bearer" + user_token
-        url = "https://api.datavillage.me/" + consent_receipt + "/processData"
-        payload = query
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": token,
-        }
-        response = requests.request("POST", url, headers=headers, data=payload)
-        return response
