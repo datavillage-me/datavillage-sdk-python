@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "datavillage-sdk"
-version = "0.0.1"
+version = "0.1.0"
 description = "This sdk allows you to connect to Datavillage API"
 authors = ["Datavillage <developer@datavillage.me>"]
 exclude = ["tests", "docs"]
