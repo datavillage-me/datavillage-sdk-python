@@ -60,7 +60,7 @@ class Cages:
         :rtype: [type]
         """
         token = "Bearer" + user_access_token
-        url = "https://api.datavillage.me/query"
+        url = "https://api.datavillage.me/query/graphql"
         payload = query
         headers = {
             "Content-Type": "application/json",
