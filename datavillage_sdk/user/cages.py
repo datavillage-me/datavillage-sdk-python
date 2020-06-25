@@ -59,7 +59,7 @@ class Cages:
         :return: [description]
         :rtype: [type]
         """
-        token = "Bearer" + user_access_token
+        token = "Bearer " + user_access_token
         url = "https://api.datavillage.me/query/graphql"
         payload = query
         headers = {
