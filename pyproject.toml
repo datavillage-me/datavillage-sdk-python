@@ -6,8 +6,9 @@ authors = ["Datavillage <developer@datavillage.me>"]
 exclude = ["tests", "docs"]
 
 [tool.poetry.dependencies]
-python = ">=3.6"
+python = "^3.6"
 requests = "^2.23.0"
+coverage = "^5.2"
 
 
 [tool.poetry.dev-dependencies]
